@@ -168,7 +168,8 @@ a {
   border-radius: 4px;
 }
 
-.order-button:hover {
+.order-button:hover,
+.order-button:focus {
   background-color: var(--accent-color-dark);
 }
 
@@ -335,12 +336,6 @@ a {
 .customers-item {
   width: 168px;
   height: 88px;
-  border: 1px solid var(--customers-icon);
-  border-radius: 4px;
-}
-
-.customers-item:hover {
-  border: 1px solid var(--accent-color-dark);
   border-radius: 4px;
 }
 
@@ -350,16 +345,21 @@ a {
   justify-content: center;
   width: 100%;
   height: 100%;
+  border: 1px solid var(--customers-icon);
+  border-radius: 4px;
+  fill: var(--customers-icon);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--accent-color-dark);
+  border-radius: 4px;
+  fill: var(--accent-color-dark);
 }
 
 .customers-icon {
   width: 104px;
   height: 56px;
-  fill: var(--customers-icon);
-}
-
-.customers-icon:hover {
-  fill: var(--accent-color-dark);
 }
 
 /*portfolio*/
@@ -402,7 +402,8 @@ a {
   padding: 12px 24px;
 }
 
-.projects-item:hover {
+.projects-item:hover,
+.projects-item:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -533,7 +534,8 @@ a {
   background-color: var(--footer-socials-bg);
 }
 
-.socials-link-footer:hover {
+.socials-link-footer:hover,
+.socials-link-footer:focus {
   background-color: var(--footer-socials-bg-hover);
 }
 
@@ -566,7 +568,8 @@ a {
   border-radius: 50%;
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.socials-link:focus {
   background-color: var(--accent-color-dark);
 }
 
